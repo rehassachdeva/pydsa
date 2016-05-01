@@ -1,9 +1,5 @@
-"""Radix Sort
-Complexity: Average Case: O(nlog(n)), where log is taken to the
-base for representing numbers. This implementation is for decimal
-system i.e. base is taken to be 10.
-Reference used: http://www.geeksforgeeks.org/radix-sort/
-"""
+# Radix Sort
+# Reference used: http://www.geeksforgeeks.org/radix-sort/
 
 BASE = 10
 
@@ -11,6 +7,13 @@ BASE = 10
 def radix_sort(a):
     """
     Sorts the list 'a' using Radix Sort algorithm.
+
+    The idea is to do digit by digit sort starting from least significant
+    digit to most significant digit.
+
+    Complexity: Average Case: O(nlog(n)), where log is taken to the base for
+    representing numbers. This implementation is for decimal system i.e. base
+    is taken to be 10.
 
     >>> from pydsa import radix_sort
     >>> a = [708, 4567, 3, 45, 911, 123, 57, 37]
